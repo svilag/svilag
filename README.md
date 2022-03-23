@@ -1,5 +1,3 @@
-### Hi there 👋
-
 # Shelbie Vilag
 
 sat.vilag@gmail.com | (734) 560-2251 | [https://github.com/svilag](https://github.com/svilag)
