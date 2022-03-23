@@ -1,6 +1,6 @@
 # Shelbie Vilag
 
-sat.vilag@gmail.com
+sat.vilag@gmail.com | svilag@umich.edu
 
 Information professional and budding developer interested in opportunities to bolster my skills and to continue learning to add to my skillset.
 
