@@ -1,6 +1,6 @@
 # Shelbie Vilag
 
-sat.vilag@gmail.com | (734) 560-2251 | [https://github.com/svilag](https://github.com/svilag)
+sat.vilag@gmail.com
 
 Information professional and budding developer interested in opportunities to bolster my skills and to continue learning to add to my skillset.
 
