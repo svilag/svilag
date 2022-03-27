@@ -15,7 +15,7 @@ The University of Michigan School of Information
 - Build a basic website using HTML, CSS, and JavaScript: Hosted on GitHub Pages [Link here](https://svilag.github.io/SI539-portfolio/)
 
 Activites & Organizations:
-Society of American Archivists, American Library Association, Michigan Esports, Google Developer Student Club, UMpy Python Study Group
+Society of American Archivists, American Library Association, Michigan Esports, Google Developer Student Club, UMpy Python Study Group, Ann Arbor Data Dive 2022
 
 __BS, History__
 Eastern Michigan University
