@@ -34,7 +34,7 @@ The Center for Digital Curricula at the College of Engineering/University of Mic
 
 - Assist in user research related to the Collabrify Flipbook application used by upper elementary school students to create simulations to model real-life phenomena.
 - Assess the effectiveness of Flipbook and provide recommendations for changes to the applicatoin to assist student learning.
-- Analyze user data created by students using the application, interview with students and teachers.
+- Analyze user data created by students using the application, distribute a survey to student users.
 
 ### Library Assistant
 
