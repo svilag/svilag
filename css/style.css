@@ -2,9 +2,6 @@ html{
     min-height: 100vh;
 }
 
-body{
-    background-color: #D4E2D4;
-}
 
 #introbody{
     width: 100%;
@@ -14,74 +11,3 @@ body{
 #skiptomain{
     display: none;
 }
-
-header{
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 0.5fr repeat(3, 1fr);
-    align-items: center;
-    gap:  1%;
-
-    /* display: flex; */
-    /* flex-flow: row nowrap;
-    align-items: center; */
-    /* justify-content: space-between; */
-}
-
-nav{
-    background-color: #406340;
-    opacity: 80%;
-    border-radius: 40px;
-    min-width: 50%;
-    height: 50px;
-    grid-column: 2 / 2 ;
-}
-
-nav ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.socials{
-    grid-column: -1;
-    justify-self: end;
-    align-self: baseline;
-}
-
-
-
-
-/* links */
-.navlink{
-    color: #D4E2D4;
-}
-
-
-
-
-/*  */
-#introduction{
-    display: flex;
-    justify-content: center;
-}
-
-#intro{
-    font-size: 5rem;
-}
-
-
-
-
-
-
-
-
-
-/* #406340 */
-/* FCF8E8 */
-/* D4E2D4 */
-/* ECB390 */
-/* DF7861 */
