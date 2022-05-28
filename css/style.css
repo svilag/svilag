@@ -1,13 +1,197 @@
+:root{
+    --baby-powder: #fdfffcff;
+    --bdazzled-blue: #235789ff;
+    --green-blue-crayola: #3c87cdff;
+    --fire-engine-red: #c1292eff;
+    --safety-yellow: #f1d302ff;
+    --raisin-black: #161925ff;
+
+    --purpureus: #9d44b5ff;
+
+    --hunter-green: #386641ff;
+    --may-green: #6a994eff;
+    --android-green: #a7c957ff;
+    --eggshell: #f2e8cfff;
+    --bittersweet-shimmer: #bc4749ff;
+
+    --rich-black-fogra-39: #070d08ff; /* dark text */
+}
+
+
 html{
     min-height: 100vh;
 }
 
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* GLOBAL */
+strong{
+    font-weight: 700;
+}
+
+em{
+    font-style: italic;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 #introbody{
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 #skiptomain{
     display: none;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* Header */
+header{
+    min-height: 5%;
+    border: 2px solid red;
+    margin: 1%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#tohome{
+    align-self: center;
+}
+
+nav{
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+nav ul{
+    border: 2px solid red;
+    padding: 25%;
+    min-width: 115px;
+    position: relative;
+    top: 50px;
+    /* display: none; */
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* MAIN */
+
+.warehouse{
+    border: 2px solid red;
+    margin: 5%;
+
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.container{
+    border: 2px solid red;
+    min-height: 100px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.introduction{
+    min-height: 200px;
+}
+
+.introduction h1{
+    font-size: 40px;
+}
+
+.introduction p{
+    font-size: 20px;
+}
+
+.projects{
+    gap: 20px;
+}
+
+.project{
+    padding: 0 0 0 5%;
+}
+
+.projects h2{
+    font-size: 30px;
+}
+
+.project h2{
+    font-size: 26px;
+}
+
+.toprojects{
+    min-height: 150px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact{
+    min-height: 125px;
+    align-items: center;
+}
+
+.contact p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOOTER */
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
