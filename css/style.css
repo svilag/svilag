@@ -89,6 +89,13 @@ nav{
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    justify-self: center;
+    align-self: center;
 }
 
 nav ul{
@@ -158,10 +165,21 @@ nav ul{
 
 .toprojects{
     min-height: 150px;
+    width: 80%;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    align-self: center;
+}
+
+.arrow{
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 .contact{
@@ -194,4 +212,5 @@ footer{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    padding: 1%;
 }
