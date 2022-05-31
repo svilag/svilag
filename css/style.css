@@ -44,10 +44,11 @@ a:hover{
     cursor: pointer;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
+/* a.navlinks{
+    TODO style navlinks
+} */
+
+
 /*  */
 /*  */
 /*  */
@@ -73,7 +74,7 @@ a:hover{
 header{
     min-height: 5%;
     border: 2px solid red;
-    margin: 1%;
+    padding: 1%;
 
     display: flex;
     flex-flow: row nowrap;
@@ -84,28 +85,24 @@ header{
     align-self: center;
 }
 
+/*  */
+/*  */
+/* NAVIGATION */
 nav{
-    border: 2px solid red;
-    /* border-radius: 50%; */
-    width: 50px;
-    height: 50px;
+    flex-grow: 0.5;
     display: flex;
-    flex-direction: column;
-}
-
-nav a{
-    justify-self: center;
-    align-self: center;
 }
 
 nav ul{
-    border: 2px solid red;
-    padding: 25%;
-    min-width: 115px;
-    position: relative;
-    top: 50px;
-    /* display: none; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
 }
+
+
+
 
 /*  */
 /*  */
@@ -141,10 +138,12 @@ nav ul{
 
 .introduction h1{
     font-size: 40px;
+    text-align: center;
 }
 
 .introduction p{
     font-size: 20px;
+    text-align: center;
 }
 
 .projects{
@@ -157,10 +156,12 @@ nav ul{
 
 .projects h2{
     font-size: 30px;
+    text-align: center;
 }
 
 .project h2{
     font-size: 26px;
+    text-align: left;
 }
 
 .toprojects{
@@ -214,3 +215,6 @@ footer{
     align-items: center;
     padding: 1%;
 }
+
+
+
