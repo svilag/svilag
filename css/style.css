@@ -243,15 +243,13 @@ nav ul {
 /* ------------------------------------- */
 .toprojects {
     min-height: 80px;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
     align-self: center;
     padding: 0px 20px;
-    border-radius: 10px;
-
-    background-color: var(--cultured);
+    border-bottom: 2px solid var(--cultured);
 }
 
 .arrow {
@@ -268,8 +266,9 @@ nav ul {
 /* -------------CONTACT-SECTION--------- */
 /* ------------------------------------- */
 .contact {
-    min-height: 125px;
     align-items: center;
+    border-top: 2px solid var(--cultured);
+    margin-top: 5px;
 }
 
 .contact p {
