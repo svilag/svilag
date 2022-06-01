@@ -2,7 +2,7 @@
 
 
 
-/* -------------COLORS, FONTS------------ */
+/* -------------ROOT-------------------- */
 
 
 
@@ -20,8 +20,14 @@
     --isabelline: #eee8e7ff;
     /* --barn-red: #6f1a07ff; */
     --kobe: #862009ff;
-
     --rich-black-fogra-39: #070d08ff; /* dark text */
+
+    --bg-gradient: radial-gradient(circle, rgba(238,232,231,1) 5%, rgba(238,232,231,1) 59%, rgba(194,194,194,1) 100%, rgba(194,194,194,1) 100%);
+
+    --roboto: "Roboto", sans-serif;
+    --merriweather: "Merriweather", serif;
+
+    --blue-border: 1px solid var(--prussian-blue);
 }
 
 
@@ -38,7 +44,7 @@
 /* ------------------------------------- */
 html {
     min-height: 100vh;
-    background-color: var(--isabelline);
+    background: var(--bg-gradient);
 }
 
 *:focus {
@@ -58,7 +64,7 @@ a {
     color: var(--kobe);
 }
 
-a:hover {
+a:hover, button:hover {
     cursor: pointer;
 }
 
@@ -68,13 +74,37 @@ p {
 
 
 
-#introbody {
-    width: 100%;
-    min-height: 100vh;
+/* ------------------------------------- */
+/* -------------FONTS------------------- */
+/* ------------------------------------- */
+h1, h2 {
+    font-family: var(--merriweather);
 }
+
+nav, p, footer {
+    font-family: var(--roboto);
+}
+
+
+
+
+
+
+
+/* ------------------------------------- */
+/* ------------------------------------- */
 
 #skiptomain {
     display: none;
+}
+
+/* ------------------------------------- */
+/* --------------HOME------------------- */
+/* ------------------------------------- */
+
+#introbody {
+    width: 100%;
+    min-height: 100vh;
 }
 
 /* ------------------------------------- */
@@ -89,6 +119,7 @@ p {
 header {
     min-height: 50px;
     padding: 10px;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -162,7 +193,7 @@ nav ul {
 }
 
 .introduction h1 {
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
 
     color: var(--kobe);
@@ -182,7 +213,7 @@ nav ul {
 /* ----------PROJECTS------------------- */
 /* ------------------------------------- */
 .projects h2 {
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
 
     color: var(--kobe);
@@ -192,10 +223,12 @@ nav ul {
 /* -------------CAROUSEL---------------- */
 /* ------------------------------------- */
 .carousel {
-    overflow: auto visible;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
     display: flex;
     gap: 15px;
-    scroll-snap-type: x mandatory;
+
     padding: 15px;
     min-height: 250px;
 }
@@ -203,15 +236,18 @@ nav ul {
 .projectBox {
     height: 200px;
     width: 200px;
+
     scroll-snap-align: start;
+
     display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+
     text-align: center;
 
-    border: 2px solid var(--prussian-blue);
+    border-radius: 10px;
+    border: var(--blue-border);
     background-color: var(--cultured);
     box-shadow: 0px 5px 5px gray;
 }
@@ -227,6 +263,7 @@ nav ul {
     all: unset;
     height: 15px;
     width: 15px;
+
     border-radius: 15px;
     background: gray;
     margin: 10px 2.5px;
@@ -243,20 +280,41 @@ nav ul {
 /* ------------------------------------- */
 .toprojects {
     min-height: 80px;
+
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
     align-self: center;
+
     padding: 0px 20px;
     border-bottom: 2px solid var(--cultured);
+
+    font-size: 20px;
+}
+
+.arrowButton{
+    border: var(--blue-border);
+    border-radius: 10px;
+    padding: 10px 20px 10px 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 5px 5px gray;
+    background-color: var(--cultured);
 }
 
 .arrow {
     border: solid var(--kobe);
     border-width: 0 10px 10px 0;
+
     display: inline-block;
+
     padding: 10px;
+
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
