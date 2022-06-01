@@ -48,7 +48,8 @@ html {
 }
 
 *:focus {
-    border-bottom: 4px solid var(--kobe);
+    /* border: 2px solid var(--kobe); */
+    border-radius: 10px;
     outline: 2px solid var(--kobe);
 }
 
@@ -60,14 +61,24 @@ em {
     font-style: italic;
 }
 
+
+/* -----------LINKS--------------------- */
 a {
     color: var(--kobe);
+    padding: 3px;
 }
 
 a:hover, button:hover {
     cursor: pointer;
 }
 
+a:visited {
+    color: var(--prussian-blue);
+}
+
+
+
+/* ------------------------------------- */
 p {
     color: var(--rich-black-fogra-39);
 }
@@ -147,13 +158,15 @@ nav ul {
 }
 
 .activeLink {
-    border-bottom: 4px solid var(--prussian-blue);
+    border-bottom: 8px solid var(--prussian-blue);
 }
 
 /* ------------------------------------- */
 /* --------------SOCIALS---------------- */
 /* ------------------------------------- */
 /* .socials {
+    box-sizing: content-box;
+    height: 50px;
 } */
 
 
@@ -245,11 +258,24 @@ nav ul {
     align-items: center;
 
     text-align: center;
+    font-size: 18px;
 
     border-radius: 10px;
     border: var(--blue-border);
     background-color: var(--cultured);
     box-shadow: 0px 5px 5px gray;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.projectBox:hover {
+    animation-name: bounce;
+    -moz-animation-name: bounce;
 }
 
 .dots {
@@ -273,6 +299,75 @@ nav ul {
     transform: scale(1.5);
     background-color: var(--prussian-blue);
 }
+
+
+
+
+
+
+
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* -------------ANIMATIONS-------------- */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform:     translateY(0);
+        transform:         translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform:     translateY(-10px);
+        transform:         translateY(-10px)
+    }
+    60% {
+        -webkit-transform: translateY(-8px);
+        -ms-transform:     translateY(-8px);
+        transform:         translateY(-8px)
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform:     translateY(0);
+        transform:         translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform:     translateY(-10px);
+        transform:         translateY(-10px)
+    }
+    60% {
+        -webkit-transform: translateY(-8px);
+        -ms-transform:     translateY(-8px);
+        transform:         translateY(-8px)
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------------- */
@@ -305,6 +400,11 @@ nav ul {
 
     box-shadow: 0px 5px 5px gray;
     background-color: var(--cultured);
+}
+
+.arrowButton:hover{
+    transform: translateX(10px);
+    transition: 0.5s;
 }
 
 .arrow {
@@ -341,7 +441,6 @@ nav ul {
 
 
 
-
 /* ------------------------------------- */
 
 
@@ -364,6 +463,9 @@ footer ul li {
     min-height: 40px;
 }
 
+.copyright {
+    color: var(--prussian-blue);
+}
 
 /* ------------------------------------- */
 
@@ -374,7 +476,11 @@ footer ul li {
 
 
 /* ------------------------------------- */
-
+@media screen and (prefers-reduced-motion){
+    .projectBox {
+        animation: none;
+    }
+}
 
 
 /* ------------------------------------- */
