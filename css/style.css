@@ -8,20 +8,10 @@
 
 /* ------------------------------------- */
 :root{
-    --baby-powder: #fdfffcff;
-    --bdazzled-blue: #235789ff;
-    --green-blue-crayola: #3c87cdff;
-    --fire-engine-red: #c1292eff;
-    --safety-yellow: #f1d302ff;
-    --raisin-black: #161925ff;
-
-    --purpureus: #9d44b5ff;
-
-    --hunter-green: #386641ff;
-    --may-green: #6a994eff;
-    --android-green: #a7c957ff;
-    --eggshell: #f2e8cfff;
-    --bittersweet-shimmer: #bc4749ff;
+    --cyber-yellow: #ffcf00ff;
+    --prussian-blue: #1c3041ff;
+    --baby-powder: #fffffcff;
+    --barn-red: #6f1a07ff;
 
     --rich-black-fogra-39: #070d08ff; /* dark text */
 }
@@ -52,10 +42,6 @@ em{
 a:hover{
     cursor: pointer;
 }
-
-/* a.navlinks{
-    TODO style navlinks
-} */
 
 
 
@@ -88,21 +74,12 @@ header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-}
-
-#tohome{
-    align-self: center;
-}
-
-/* --------------NAVIGATION-------------- */
-.menu{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
     align-items: center;
 }
 
-nav{
+
+/* --------------NAVIGATION-------------- */
+nav {
     flex-grow: 0.5;
     display: flex;
 }
@@ -114,6 +91,13 @@ nav ul{
     flex-grow: 1;
     align-items: center;
 }
+
+
+
+/* --------------SOCIALS----------------- */
+/* .socials {
+} */
+
 
 
 
@@ -159,24 +143,58 @@ nav ul{
     text-align: center;
 }
 
-.projects{
-    gap: 20px;
-}
 
-.project{
-    padding: 0 0 0 5%;
-}
-
+/* ----------PROJECTS------------------- */
 .projects h2{
     font-size: 30px;
     text-align: center;
 }
 
-.project h2{
-    font-size: 26px;
-    text-align: left;
+/* -------------CAROUSEL---------------- */
+.carousel {
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    padding: 15px;
 }
 
+.projectBox {
+    height: 200px;
+    width: 200px;
+    margin-right: 5px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid red;
+    box-shadow: 0px 4px 4px 0px gray;
+    text-align: center;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    all: unset;
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: gray;
+    margin-top: 15px;
+}
+
+.dot:focus {
+    transform: scale(1.5);
+}
+
+
+
+/* -------------TO PROJECTS-------------- */
 .toprojects{
     min-height: 150px;
     width: 80%;
@@ -196,6 +214,8 @@ nav ul{
     -webkit-transform: rotate(-45deg);
 }
 
+
+/* -------------CONTACT----------------- */
 .contact{
     min-height: 125px;
     align-items: center;
@@ -229,5 +249,45 @@ footer{
     padding: 1%;
 }
 
+footer ul li{
+    text-align: center;
+    min-height: 40px;
+}
 
 
+/* ------------------------------------- */
+
+
+
+/* ----------MEDIA QUERIES-------------- */
+
+
+
+/* ------------------------------------- */
+
+
+
+
+/* ------------TABLET------------------- */
+@media screen and (min-width: 600px){
+
+}
+
+
+
+
+/* --------------DESKTOP----------------- */
+@media screen and (min-width: 1200px){
+
+
+
+
+    /* -----CAROUSEL----- */
+    .carousel{
+        justify-content: center;
+    }
+
+    .dots{
+        display: none;
+    }
+}
