@@ -7,8 +7,8 @@ dots.addEventListener('click', e => {
   
   const index = Array.from(dots.children).indexOf(target);
   const selector = `.projectBox:nth-child(${index + 1})`;
-  const box = document.querySelector(selector)
-  box.scrollIntoView({
+  const project = document.querySelector(selector);
+  project.scrollIntoView({
     behavior: 'smooth',
     inline: 'start'
   })

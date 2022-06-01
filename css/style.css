@@ -7,19 +7,24 @@
 
 
 /* ------------------------------------- */
-:root{
+
+/* --------------PALETTE---------------- */
+/* https://coolors.co/eee8e7-ffcf00-862009-1c3041-f7f7f7 */
+/* ------------------------------------- */
+
+:root {
     --cyber-yellow: #ffcf00ff;
     --prussian-blue: #1c3041ff;
-    --baby-powder: #fffffcff;
-    --barn-red: #6f1a07ff;
+    /* --baby-powder: #fffffcff; */
+    --cultured: #f7f7f7ff;
+    --isabelline: #eee8e7ff;
+    /* --barn-red: #6f1a07ff; */
+    --kobe: #862009ff;
 
     --rich-black-fogra-39: #070d08ff; /* dark text */
 }
 
 
-html{
-    min-height: 100vh;
-}
 
 
 /* ------------------------------------- */
@@ -31,29 +36,44 @@ html{
 
 
 /* ------------------------------------- */
-strong{
+html {
+    min-height: 100vh;
+    background-color: var(--isabelline);
+}
+
+*:focus {
+    border-bottom: 4px solid var(--kobe);
+    outline: 2px solid var(--kobe);
+}
+
+strong {
     font-weight: 700;
 }
 
-em{
+em {
     font-style: italic;
 }
 
-a:hover{
+a {
+    color: var(--kobe);
+}
+
+a:hover {
     cursor: pointer;
+}
+
+p {
+    color: var(--rich-black-fogra-39);
 }
 
 
 
-
-
-
-#introbody{
+#introbody {
     width: 100%;
     min-height: 100vh;
 }
 
-#skiptomain{
+#skiptomain {
     display: none;
 }
 
@@ -66,25 +86,24 @@ a:hover{
 
 
 /* ------------------------------------- */
-header{
-    min-height: 5%;
-    border: 2px solid red;
-    padding: 1%;
-
+header {
+    min-height: 50px;
+    padding: 10px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
-
-/* --------------NAVIGATION-------------- */
+/* ------------------------------------- */
+/* --------------NAVIGATION------------- */
+/* ------------------------------------- */
 nav {
     flex-grow: 0.5;
     display: flex;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -92,9 +111,17 @@ nav ul{
     align-items: center;
 }
 
+.navLink {
+    font-size: 24px;
+}
 
+.activeLink {
+    border-bottom: 4px solid var(--prussian-blue);
+}
 
-/* --------------SOCIALS----------------- */
+/* ------------------------------------- */
+/* --------------SOCIALS---------------- */
+/* ------------------------------------- */
 /* .socials {
 } */
 
@@ -110,9 +137,7 @@ nav ul{
 
 
 /* ------------------------------------- */
-
-.warehouse{
-    border: 2px solid red;
+.warehouse {
     margin: 5%;
 
     display: flex;
@@ -120,8 +145,7 @@ nav ul{
     gap: 20px;
 }
 
-.container{
-    border: 2px solid red;
+.container {
     min-height: 100px;
 
     display: flex;
@@ -129,84 +153,109 @@ nav ul{
     justify-content: center;
 }
 
-.introduction{
+/* ------------------------------------- */
+/* ----------INTRODUCTION--------------- */
+/* ------------------------------------- */
+
+.introduction {
     min-height: 200px;
 }
 
-.introduction h1{
+.introduction h1 {
     font-size: 40px;
     text-align: center;
+
+    color: var(--kobe);
 }
 
-.introduction p{
+.introduction p {
     font-size: 20px;
     text-align: center;
+    line-height: 40px;
 }
 
+.introduction p em {
+    color: var(--kobe);
+}
 
+/* ------------------------------------- */
 /* ----------PROJECTS------------------- */
-.projects h2{
+/* ------------------------------------- */
+.projects h2 {
     font-size: 30px;
     text-align: center;
+
+    color: var(--kobe);
 }
 
+/* ------------------------------------- */
 /* -------------CAROUSEL---------------- */
+/* ------------------------------------- */
 .carousel {
-    overflow: auto;
+    overflow: auto visible;
     display: flex;
+    gap: 15px;
     scroll-snap-type: x mandatory;
     padding: 15px;
+    min-height: 250px;
 }
 
 .projectBox {
     height: 200px;
     width: 200px;
-    margin-right: 5px;
     scroll-snap-align: start;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    border: 2px solid red;
-    box-shadow: 0px 4px 4px 0px gray;
+    border-radius: 10px;
     text-align: center;
+
+    border: 2px solid var(--prussian-blue);
+    background-color: var(--cultured);
+    box-shadow: 0px 5px 5px gray;
 }
 
 .dots {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 2px;
 }
 
 .dot {
     all: unset;
-    margin-right: 5px;
     height: 15px;
     width: 15px;
     border-radius: 15px;
     background: gray;
-    margin-top: 15px;
+    margin: 10px 2.5px;
 }
 
 .dot:focus {
     transform: scale(1.5);
+    background-color: var(--prussian-blue);
 }
 
 
-
-/* -------------TO PROJECTS-------------- */
-.toprojects{
-    min-height: 150px;
-    width: 80%;
+/* ------------------------------------- */
+/* -------------TO PROJECTS------------- */
+/* ------------------------------------- */
+.toprojects {
+    min-height: 80px;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
     align-self: center;
+    padding: 0px 20px;
+    border-radius: 10px;
+
+    background-color: var(--cultured);
 }
 
-.arrow{
-    border: solid black;
+.arrow {
+    border: solid var(--kobe);
     border-width: 0 10px 10px 0;
     display: inline-block;
     padding: 10px;
@@ -215,17 +264,21 @@ nav ul{
 }
 
 
-/* -------------CONTACT----------------- */
-.contact{
+/* ------------------------------------- */
+/* -------------CONTACT-SECTION--------- */
+/* ------------------------------------- */
+.contact {
     min-height: 125px;
     align-items: center;
 }
 
-.contact p{
+.contact p {
     font-size: 20px;
 }
 
-
+.contact p strong {
+    color: var(--kobe);
+}
 
 
 
@@ -241,7 +294,7 @@ nav ul{
 
 
 /* ------------------------------------- */
-footer{
+footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -249,7 +302,7 @@ footer{
     padding: 1%;
 }
 
-footer ul li{
+footer ul li {
     text-align: center;
     min-height: 40px;
 }
@@ -267,27 +320,30 @@ footer ul li{
 
 
 
-
+/* ------------------------------------- */
 /* ------------TABLET------------------- */
-@media screen and (min-width: 600px){
+/* ------------------------------------- */
+@media screen and (min-width: 600px) {
 
 }
 
 
 
+/* ------------------------------------- */
+/* --------------DESKTOP---------------- */
+/* ------------------------------------- */
+@media screen and (min-width: 1200px) {
 
-/* --------------DESKTOP----------------- */
-@media screen and (min-width: 1200px){
 
 
-
-
-    /* -----CAROUSEL----- */
-    .carousel{
+    /* ------------------------------------- */
+    /* --------------CAROUSEL--------------- */
+    /* ------------------------------------- */
+    .carousel {
         justify-content: center;
     }
 
-    .dots{
+    .dots {
         display: none;
     }
 }
