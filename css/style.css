@@ -15,10 +15,9 @@
 :root {
     --cyber-yellow: #ffcf00ff;
     --prussian-blue: #1c3041ff;
-    /* --baby-powder: #fffffcff; */
     --cultured: #f7f7f7ff;
     --isabelline: #eee8e7ff;
-    /* --barn-red: #6f1a07ff; */
+    /* --barn-red: #6f1a07ff; */ /* not enough contrast */
     --kobe: #862009ff;
     --rich-black-fogra-39: #070d08ff; /* dark text */
 
@@ -45,6 +44,7 @@
 html {
     min-height: 100vh;
     background: var(--bg-gradient);
+    /* background-color: var(--isabelline); */
 }
 
 *:focus {
@@ -92,10 +92,9 @@ h1, h2 {
     font-family: var(--merriweather);
 }
 
-nav, p, footer {
+nav, p, figcaption, footer {
     font-family: var(--roboto);
 }
-
 
 
 
@@ -153,12 +152,22 @@ nav ul {
     align-items: center;
 }
 
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
+
 .navLink {
     font-size: 24px;
 }
 
 .activeLink {
     border-bottom: 8px solid var(--prussian-blue);
+}
+
+.divider {
+    color: var(--kobe);
+    font-weight: 700;
 }
 
 /* ------------------------------------- */
@@ -300,9 +309,31 @@ nav ul {
     background-color: var(--prussian-blue);
 }
 
+/* ------------------------------------- */
 
+/* ------------------------------------- */
+/* ----------PROJECTS-PAGE-------------- */
+/* ------------------------------------- */
 
+/* ------------------------------------- */
+.proj-page h1 {
+    font-size: 40px;
+    color: var(--kobe);
+    text-align: center;
+}
 
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 20px;
+
+    margin: 20px 0px;
+}
+
+.wideProject {
+    min-width: 100%;
+}
 
 
 
@@ -477,8 +508,9 @@ footer ul li {
 
 /* ------------------------------------- */
 @media screen and (prefers-reduced-motion){
-    .projectBox {
+    *, .projectBox, nav ul li:hover {
         animation: none;
+        transform: translateY(0px);
     }
 }
 
@@ -508,5 +540,38 @@ footer ul li {
 
     .dots {
         display: none;
+    }
+
+
+
+
+    /* ------------------------------------- */
+    /* --------------PROJECTS-PAGE---------- */
+    /* ------------------------------------- */
+    .projectGrid {
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 20px;
+
+        margin: 20px 0px;
+    }
+
+    .wideProject {
+        min-width: 100%;
+        justify-content: space-around;
+        animation: none;
+    }
+
+    #msu, #first-site {
+        grid-column: 1 / 3;
+    }
+
+    #mhtummy, #letters-database {
+        grid-column: 3 / -1;
+    }
+
+    #letters {
+        grid-column: 2 / 4;
     }
 }
