@@ -92,7 +92,7 @@ h1, h2 {
     font-family: var(--merriweather);
 }
 
-nav, p, figcaption, footer {
+nav, p, .caption, footer {
     font-family: var(--roboto);
 }
 
@@ -287,6 +287,22 @@ nav ul li:hover {
     -moz-animation-name: bounce;
 }
 
+.projectBox .pfigure img {
+    width: 100px;
+    height: 100px;
+}
+
+.projectBox .pimg {
+    font-size: 90px;
+    padding: 10px;
+
+    color: var(--prussian-blue);
+}
+
+.projectBox .aboutProject {
+    display: none;
+}
+
 .dots {
     display: flex;
     justify-content: center;
@@ -333,9 +349,20 @@ nav ul li:hover {
 
 .wideProject {
     min-width: 100%;
+    gap: 10px;
 }
 
+.wideProject .aboutProject, .wideProject .pfigure {
+    width: 50%;
+}
 
+.wideProject .description {
+    display: none;
+}
+
+.readMore {
+    color: var(--kobe);
+}
 
 /* ------------------------------------- */
 
@@ -561,6 +588,18 @@ footer ul li {
         min-width: 100%;
         justify-content: space-around;
         animation: none;
+    }
+
+    .wideProject .description{
+        display: block;
+    }
+
+    .aboutProject {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 
     #msu, #first-site {
