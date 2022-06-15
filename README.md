@@ -2,7 +2,7 @@
 
 sat.vilag@gmail.com | svilag@umich.edu
 
-Information professional and budding developer interested in opportunities to bolster my skills and to continue learning to add to my skillset.
+Front End Developer at Michigan State University Libraries
 
 ## Education
 
@@ -26,6 +26,11 @@ Activites & Organizations:
 Undergraduate Symposium, Marching Band
 
 ## Experience
+
+### Front End Developer - Information Technologist I
+
+July 2022 - Present
+Michigan State University Libraries
 
 ### User Experience Intern
 
