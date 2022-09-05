@@ -1,32 +1,15 @@
-/* ------------------------------------- */
-
-
-
-/* -------------ROOT-------------------- */
-
-
-
-/* ------------------------------------- */
-
-/* --------------PALETTE---------------- */
-/* https://coolors.co/eee8e7-ffcf00-862009-1c3041-f7f7f7 */
-/* ------------------------------------- */
+/* ~~~~~ ROOT ~~~~~ */
 
 :root {
-    --cyber-yellow: #ffcf00ff;
-    --prussian-blue: #1c3041ff;
-    --cultured: #f7f7f7ff;
-    --isabelline: #eee8e7ff;
-    /* --barn-red: #6f1a07ff; */ /* not enough contrast */
-    --kobe: #862009ff;
-    --rich-black-fogra-39: #070d08ff; /* dark text */
-
-    --bg-gradient: radial-gradient(circle, rgba(238,232,231,1) 5%, rgba(238,232,231,1) 59%, rgba(194,194,194,1) 100%, rgba(194,194,194,1) 100%);
-
-    --roboto: "Roboto", sans-serif;
-    --merriweather: "Merriweather", serif;
-
-    --blue-border: 1px solid var(--prussian-blue);
+    --primary-clr: #045462;
+    --secondary-clr1: #8fe5f5;
+    --secondary-crl2: #f8b4d7;
+    --secondary-mid1: #2ebfd9;
+    --secondary-mid2: #f056a6;
+    --secondary-dark2: #bf1d71;
+    --light: #ffffff;
+    --dark: #000000;
+    --neutral: #4a5759;
 }
 
 
